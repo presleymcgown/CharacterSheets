@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class SheetBuilderView {
+import javax.swing.*;
+
+public class SheetBuilderView extends JFrame {
+
+    
+
 }
