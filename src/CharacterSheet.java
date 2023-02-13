@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class CharacterSheet {
 
     // * basic info
@@ -15,6 +17,7 @@ public class CharacterSheet {
     public int initiative;
     public int speed;
     public int maxHP;
+    public int currentHP;
     public int hitDiceType;
     public int amountOfHitDice;
     public int proficiencyBonus;
@@ -26,6 +29,29 @@ public class CharacterSheet {
     public int intelligent;
     public int wisdom;
     public int charisma;
+
+    // * passives
     public int passivePerception;
+
+    // * features and traits
+    public ArrayList<String> traits;
+
+    // * proficiencies
+    public ArrayList<String> languages;
+    public ArrayList <String> proficiencies;
+
+    // * equipment
+    public ArrayList<String> equipment;
+    public ArrayList<String> weapons;
+    public ArrayList<String> armor;
+    public ArrayList<String> spells;
+
+    // * money
+    public int copper;
+    public int silver;
+    public int electrum;
+    public int gold;
+    public int platinum;
+
 
 }
