@@ -20,7 +20,7 @@ public class SheetBuilderView extends JFrame {
         infoTab = new InfoPanel();
         abilityTab = new AbilityPanel();
 
-        tabs.add("Choose a Race", raceTab);
+        tabs.add("Choose a com.prog2.races.Race", raceTab);
         tabs.add("Choose a Class", classTab);
         tabs.add("Choose a Name and Background", infoTab);
         tabs.add("Roll Your Abilities", abilityTab);

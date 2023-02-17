@@ -1,3 +1,5 @@
+import com.prog2.races.Race;
+
 import java.util.ArrayList;
 
 public class CharacterSheet {

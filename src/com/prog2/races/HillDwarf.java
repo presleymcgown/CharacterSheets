@@ -1,4 +1,11 @@
-public class HillDwarf extends Race{
+package com.prog2.races;
+
+import com.prog2.races.CreatureSize;
+import com.prog2.races.Race;
+
+import javax.swing.*;
+
+public class HillDwarf extends Race {
 
     public HillDwarf(){
 
@@ -16,6 +23,11 @@ public class HillDwarf extends Race{
         this.traits.add("Darkvision");
         this.traits.add("Poison Resistance");
 
+    }
+
+    @Override
+    public JPanel getSpecialUI() {
+        return null;
     }
 
 }
