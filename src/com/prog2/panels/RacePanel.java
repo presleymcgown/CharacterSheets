@@ -66,6 +66,8 @@ public class RacePanel extends JPanel {
 
         }
 
+        add(chosen.getSpecialUI());
+
     }
 
 }

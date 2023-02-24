@@ -1,3 +1,4 @@
+import com.prog2.classes.CharacterClass;
 import com.prog2.races.Race;
 
 import java.util.ArrayList;

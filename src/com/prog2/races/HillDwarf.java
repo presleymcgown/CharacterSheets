@@ -23,6 +23,8 @@ public class HillDwarf extends Race {
         this.traits.add("Darkvision");
         this.traits.add("Poison Resistance");
 
+        
+
     }
 
     @Override
