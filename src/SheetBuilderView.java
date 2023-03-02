@@ -30,6 +30,7 @@ public class SheetBuilderView extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800,500);
         setVisible(true);
+
     }
 
 }

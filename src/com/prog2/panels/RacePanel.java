@@ -1,6 +1,7 @@
 package com.prog2.panels;
 
 import com.prog2.races.Dwarf;
+import com.prog2.races.HillDwarf;
 import com.prog2.races.Race;
 
 import javax.swing.*;
@@ -17,11 +18,12 @@ public class RacePanel extends JPanel {
 
         raceChoicePanel = new JPanel();
 
+        raceCombo = new JComboBox<>();
+        subCombo = new JComboBox<>();
+
         initRaceCombo();
         initSubCombo();
 
-        raceCombo = new JComboBox<>();
-        subCombo = new JComboBox<>();
 
         raceChoiceLabel = new JLabel("Choose your Race");
         subChoiceLabel = new JLabel("Choose a SubRace");
