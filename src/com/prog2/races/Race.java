@@ -1,6 +1,8 @@
 package com.prog2.races;
 
 
+import com.prog2.enums.CreatureSize;
+
 import javax.swing.*;
 import java.io.Serializable;
 import java.util.ArrayList;

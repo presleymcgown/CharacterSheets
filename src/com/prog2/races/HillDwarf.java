@@ -1,7 +1,6 @@
 package com.prog2.races;
 
-import com.prog2.races.CreatureSize;
-import com.prog2.races.Race;
+import com.prog2.enums.CreatureSize;
 
 import javax.swing.*;
 

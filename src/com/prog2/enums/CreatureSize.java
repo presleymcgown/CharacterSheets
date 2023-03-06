@@ -1,4 +1,4 @@
-package com.prog2.races;
+package com.prog2.enums;
 
 public enum CreatureSize {
 

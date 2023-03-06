@@ -1,5 +1,7 @@
 package com.prog2.classes;
 
+import com.prog2.enums.Skill;
+
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,7 +16,7 @@ public abstract class CharacterClass {
 
     public ArrayList<String> proficiencies;
 
-    public HashMap<String, Boolean> skills;
+    public HashMap<Skill, Boolean> skills;
 
     public HashMap<String, Boolean> savingThrows;
 

@@ -1,3 +1,5 @@
+package com.prog2.enums;
+
 public enum Alignment {
 
     LAWFUL_GOOD, NEUTRAL_GOOD, CHAOTIC_GOOD,
