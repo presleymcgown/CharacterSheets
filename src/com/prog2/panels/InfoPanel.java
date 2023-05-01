@@ -8,7 +8,6 @@ import javax.swing.*;
 
 public class InfoPanel extends JPanel {
 
-    JLabel demo;
     JLabel characterNameLabel;
     JTextField characterName;
     JLabel playerNameLabel;
@@ -20,8 +19,6 @@ public class InfoPanel extends JPanel {
 
     public InfoPanel(){
 
-        demo = new JLabel(Skill.ANIMAL_HANDLING.toString());
-        add(demo);
 
         characterNameLabel = new JLabel("Type your character's name.");
         characterName = new JTextField("Character Name:");
@@ -71,7 +68,7 @@ public class InfoPanel extends JPanel {
 
         background = new JComboBox();
 
-        background.addItem(new Sailor());
+        background.addItem(new Sailor().backgroundName);
 
     }
 

@@ -22,7 +22,7 @@ public class SheetBuilderView extends JFrame {
 
         tabs.add("Choose a Race", raceTab);
         tabs.add("Choose a Class", classTab);
-        tabs.add("Choose a Name and com.prog2.backgrounds.Background", infoTab);
+        tabs.add("Choose a Name and Background", infoTab);
         tabs.add("Roll Your Abilities", abilityTab);
 
         this.add(tabs, BorderLayout.CENTER);
