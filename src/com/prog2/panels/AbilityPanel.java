@@ -10,6 +10,7 @@ public class AbilityPanel extends JPanel {
   int numPointsRem = 27;
 
   JPanel abilitiesView;
+  JPanel pointsView;
 
   JLabel strengthLabel;
   JLabel dexterityLabel;
@@ -34,20 +35,40 @@ public class AbilityPanel extends JPanel {
 
   public AbilityPanel(){
 
+    pointsView = new JPanel(new GridLayout(2,2));
+
+    add(pointsView);
+
     pointsRemainingLabel = new JLabel("Points Remaining:");
     numPointsRemLabel = new JLabel(" " + numPointsRem);
 
-    add(pointsRemainingLabel);
-    add(numPointsRemLabel);
+    pointsView.add(pointsRemainingLabel);
+    pointsView.add(numPointsRemLabel);
 
     abilitiesView = new JPanel(new GridLayout(6, 2));
 
-    initComboBoxes(strengthChoice);
-    initComboBoxes(dexterityChoice);
-    initComboBoxes(constitutionChoice);
-    initComboBoxes(intelligenceChoice);
-    initComboBoxes(wisdomChoice);
-    initComboBoxes(charismaChoice);
+    pointsView.add(abilitiesView);
+
+    strengthChoice = new JComboBox();
+    dexterityChoice = new JComboBox();
+    constitutionChoice = new JComboBox();
+    intelligenceChoice = new JComboBox();
+    wisdomChoice = new JComboBox();
+    charismaChoice = new JComboBox();
+
+    strengthChoice = initComboBoxes(strengthChoice);
+    dexterityChoice = initComboBoxes(dexterityChoice);
+    constitutionChoice = initComboBoxes(constitutionChoice);
+    intelligenceChoice = initComboBoxes(intelligenceChoice);
+    wisdomChoice = initComboBoxes(wisdomChoice);
+    charismaChoice = initComboBoxes(charismaChoice);
+
+    strengthLabel = new JLabel("Strength");
+    dexterityLabel = new JLabel("Dexterity");
+    constitutionLabel = new JLabel("Constitution ");
+    intelligenceLabel = new JLabel("Intelligence");
+    wisdomLabel = new JLabel("Wisdom");
+    charismaLabel = new JLabel("Charisma");
 
     abilitiesView.add(strengthLabel);
     abilitiesView.add(strengthChoice);
@@ -64,11 +85,15 @@ public class AbilityPanel extends JPanel {
 
   }
 
-  private void initComboBoxes(JComboBox box){
+  private JComboBox initComboBoxes(JComboBox boxA){
+
+    JComboBox box = boxA;
 
     for (int i = 0; i <= 9; i++) {
       box.addItem(i);
     }
+
+    return box;
 
   }
 
